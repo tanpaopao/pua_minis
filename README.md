@@ -1,5 +1,25 @@
 # pua-minis
 
+<p align="center">
+  <strong>Minis 原生高能动性调试与排障 Skill</strong><br>
+  让 Agent 少甩锅、少空转、先取证、会换轨、会验证。
+</p>
+
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/badge/version-v1.0.0-blue?style=flat-square">
+  <img alt="Platform" src="https://img.shields.io/badge/platform-Minis-111111?style=flat-square">
+  <img alt="Type" src="https://img.shields.io/badge/type-Skill-6f42c1?style=flat-square">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-green?style=flat-square">
+  <img alt="Focus" src="https://img.shields.io/badge/focus-High%20Agency-orange?style=flat-square">
+</p>
+
+<p align="center">
+  <a href="./SKILL.md">Skill 说明</a> ·
+  <a href="./references/checklist.md">快速清单</a> ·
+  <a href="./references/escalation.md">升级手册</a> ·
+  <a href="./references/examples.md">实战案例</a>
+</p>
+
 一个适配 **Minis** 的高能动性调试与排障 Skill。  
 核心目标不是“制造压力感”，而是让代理在真实任务里做到：
 
@@ -8,6 +28,25 @@
 - 先取证，再提问
 - 修复后必须验证
 - 主动检查相邻风险点
+
+---
+
+## 快速开始
+
+如果你正在使用 Minis，并希望 Agent 在调试时更主动、更难放弃，可以直接查看：
+
+- [SKILL.md](./SKILL.md)
+- [快速清单](./references/checklist.md)
+- [升级手册](./references/escalation.md)
+- [实战案例](./references/examples.md)
+
+适合触发它的用户表达包括：
+- 继续查
+- 别放弃
+- 换个方法
+- 查到底
+- 别甩锅
+- 不要只给建议
 
 ---
 
