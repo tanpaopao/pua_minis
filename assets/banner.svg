@@ -1,0 +1,49 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1020"/>
+      <stop offset="0.5" stop-color="#121A33"/>
+      <stop offset="1" stop-color="#1D2A57"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="180" y1="120" x2="1040" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7F9"/>
+      <stop offset="0.5" stop-color="#8B5CF6"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="1280" height="640" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" rx="32" fill="url(#bg)"/>
+  <g opacity="0.28" filter="url(#blur)">
+    <circle cx="250" cy="120" r="120" fill="#6EE7F9"/>
+    <circle cx="1010" cy="160" r="150" fill="#8B5CF6"/>
+    <circle cx="980" cy="520" r="130" fill="#F59E0B"/>
+  </g>
+
+  <rect x="74" y="80" width="1132" height="480" rx="28" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.12)"/>
+
+  <text x="108" y="180" fill="#E5F0FF" font-size="28" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif" letter-spacing="4">MINIS NATIVE SKILL</text>
+  <text x="108" y="275" fill="white" font-size="88" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">pua-minis</text>
+  <text x="108" y="338" fill="#AFC3E8" font-size="30" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">高能动性调试与排障 Skill</text>
+
+  <text x="108" y="430" fill="#D8E4FF" font-size="26" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">不轻易放弃 · 先取证再提问 · 失败后本质换轨 · 修复必须验证</text>
+  <text x="108" y="476" fill="#D8E4FF" font-size="26" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">主动检查相邻风险点，减少甩锅、空转与浅层修复</text>
+
+  <g transform="translate(845 180)">
+    <rect width="270" height="220" rx="24" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.14)"/>
+    <rect x="26" y="30" width="218" height="30" rx="15" fill="#11182E"/>
+    <circle cx="48" cy="45" r="6" fill="#22C55E"/>
+    <text x="64" y="51" fill="#DCE7FF" font-size="16" font-family="Menlo,Monaco,monospace">debug mode: HIGH AGENCY</text>
+    <text x="28" y="98" fill="#CDE0FF" font-size="18" font-family="Menlo,Monaco,monospace">1. read logs</text>
+    <text x="28" y="130" fill="#CDE0FF" font-size="18" font-family="Menlo,Monaco,monospace">2. read files</text>
+    <text x="28" y="162" fill="#CDE0FF" font-size="18" font-family="Menlo,Monaco,monospace">3. switch route</text>
+    <text x="28" y="194" fill="#CDE0FF" font-size="18" font-family="Menlo,Monaco,monospace">4. verify result</text>
+  </g>
+
+  <rect x="108" y="518" width="170" height="44" rx="22" fill="url(#accent)"/>
+  <text x="141" y="547" fill="#0B1020" font-size="20" font-weight="700" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">v1.0.0</text>
+
+  <text x="1020" y="547" fill="#AFC3E8" font-size="18" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,Arial,sans-serif">Minis · Debugging · High Agency</text>
+</svg>

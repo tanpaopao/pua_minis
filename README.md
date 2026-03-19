@@ -1,6 +1,10 @@
 # pua-minis
 
 <p align="center">
+  <img src="./assets/banner.svg" alt="pua-minis banner" width="100%">
+</p>
+
+<p align="center">
   <strong>Minis 原生高能动性调试与排障 Skill</strong><br>
   让 Agent 少甩锅、少空转、先取证、会换轨、会验证。
 </p>
