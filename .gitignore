@@ -1,0 +1,17 @@
+# macOS / Linux
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editors
+.vscode/
+.idea/
+
+# Local temp
+*.log
+*.tmp
