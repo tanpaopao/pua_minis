@@ -1,26 +1,66 @@
 # pua-minis
 
-A Minis-native high-agency debugging skill focused on persistence, evidence-driven troubleshooting, route switching, verification, and proactive follow-up checks.
+一个适配 **Minis** 的高能动性调试与排障 Skill。  
+核心目标不是“制造压力感”，而是让代理在真实任务里做到：
 
-## What it does
+- 不轻易放弃
+- 不在同一路径上反复空转
+- 先取证，再提问
+- 修复后必须验证
+- 主动检查相邻风险点
 
-`pua-minis` is a practical adaptation of the broader PUA-style agent idea for the Minis environment.
-It is designed to prevent agents from:
+---
 
-- giving up too early
-- repeating the same failed path
-- blaming the user or environment without evidence
-- stopping after surface-level fixes
-- claiming completion without verification
+## 这个 Skill 解决什么问题
 
-Instead, it enforces:
+很多 AI Agent 在调试与排障时，容易出现这些问题：
 
-- evidence collection first
-- fundamentally different retries after repeated failure
-- verification before declaring success
-- adjacent risk checks after fixing the main issue
+- 同一个失败命令反复执行几次后就放弃
+- 不读日志、不读文件，直接猜原因
+- 遇到权限/网络/API 问题就甩锅给环境或用户
+- 只修表面问题，不做验证
+- 声称“完成”，但实际上没有闭环
 
-## Repository structure
+`pua-minis` 的设计目标，就是把这种工作方式切换成：
+
+> **高能动性 + 证据驱动 + 本质换轨 + 验证闭环**
+
+---
+
+## 核心能力
+
+### 1. 高能动性排查
+遇到问题时优先执行工具动作，而不是停留在建议层面。
+
+### 2. 证据驱动
+要求通过日志、配置、源码、环境、官方文档等真实信息推进，而不是靠猜。
+
+### 3. 本质换轨
+当同一路径失败两次后，必须切换到一个本质不同的新方法。
+
+### 4. 验证闭环
+修复不是结束，验证成功才算完成。
+
+### 5. 相邻风险检查
+主问题修复后，继续检查同类问题、相邻配置和边界风险。
+
+---
+
+## 适用场景
+
+适用于需要系统排查和主动推进的任务，例如：
+
+- 调试代码错误
+- 部署失败排障
+- 配置不生效
+- API 认证/网络/权限问题
+- 自动化脚本异常
+- 数据处理流程故障
+- 网页抓取 / 接口调用异常
+
+---
+
+## 仓库结构
 
 ```text
 pua-minis/
@@ -31,34 +71,67 @@ pua-minis/
     └── examples.md
 ```
 
-## Files
+---
 
-- `SKILL.md` — main trigger rules, workflow, and tool mapping for Minis
-- `references/checklist.md` — quick execution checklist
-- `references/escalation.md` — L1/L2/L3 escalation playbook
-- `references/examples.md` — practical examples, including a validated local self-test case
+## 文件说明
 
-## Target environment
+- `SKILL.md`
+  - 主技能说明
+  - 包含触发规则、工作流、Minis 工具映射、行为禁令
 
-- Minis
-- Native tool usage via:
-  - `shell_execute`
-  - `file_read`
-  - `file_edit`
-  - `file_write`
-  - `browser_use`
-  - `memory_write`
+- `references/checklist.md`
+  - 快速执行清单
+  - 适合在排查时快速对照
 
-## Positioning
+- `references/escalation.md`
+  - L1 / L2 / L3 升级动作手册
+  - 适合任务卡住时执行分级推进
 
-This skill is not meant to be a theatrical pressure prompt.
-It is a practical high-agency troubleshooting skill for real execution.
+- `references/examples.md`
+  - 典型案例集
+  - 包含一个已通过本地自测验证的案例
 
-## Suggested companion skills
+---
 
-- `production-agent-public` — for production-grade delivery after root cause is found
-- `self-improving-agent` — for recording durable learnings and recurring pitfalls
+## Minis 工具适配
 
-## Status
+本 Skill 面向 Minis 原生环境设计，重点配合这些工具：
 
-Current version: `1.0.0`
+- `shell_execute`
+- `file_read`
+- `file_edit`
+- `file_write`
+- `browser_use`
+- `memory_write`
+
+---
+
+## 设计定位
+
+`pua-minis` 不是表演化的“高压 prompt”。  
+它的定位是一个真正可执行的 **Minis 原生高能动性排障 Skill**。
+
+如果你希望 Agent：
+- 少甩锅
+- 少空转
+- 多取证
+- 多验证
+- 多闭环
+
+那这个 Skill 就是为这种场景设计的。
+
+---
+
+## 推荐联动使用
+
+- `production-agent-public`
+  - 当根因定位完成后，继续产出生产级方案
+
+- `self-improving-agent`
+  - 当发现可复用经验或复发问题时，做长期沉淀
+
+---
+
+## 当前版本
+
+`v1.0.0`
