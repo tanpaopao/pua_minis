@@ -28,6 +28,11 @@
   <a href="./references/self-check.md">中途自检</a>
 </p>
 
+> `pua-minis` 不是把通用 PUA 技能直接照搬到 Minis。  
+> 它把其中真正有效的部分重新工程化为 **Minis 原生排障协议**：少空话、重动作、强闭环、可验证、可退出。
+
+**English summary:** `pua-minis` is a Minis-native high-agency troubleshooting skill focused on evidence-driven debugging, path switching, verification closure, and structured failure exit.
+
 一个适配 **Minis** 的高能动性调试与排障 Skill。  
 核心目标不是“制造压力感”，而是让代理在真实任务里做到：
 
@@ -61,6 +66,38 @@
 - 查到底
 - 别甩锅
 - 不要只给建议
+
+---
+
+## 什么时候触发 / 什么时候不要触发
+
+### 推荐触发
+- 连续失败 2 次以上
+- 已经开始原地打转
+- 修完表面问题但还没验证
+- 准备把问题甩给环境或用户
+- 用户明确说“继续查 / 查到底 / 别甩锅”
+
+### 不建议触发
+- 普通闲聊
+- 一次性小修改
+- 简单问答
+- 用户明确只要概念说明
+- 首次失败但已经在执行清晰新方案
+
+---
+
+## 最短示例
+
+### 用户输入
+> 继续查，别只给建议。
+
+### Skill 预期行为
+- 先读报错 / 日志 / 配置 / 源码中的至少一项
+- 停止重复旧路径
+- 换成一个本质不同的新方法
+- 修复后做真实验证
+- 如果仍然卡住，给出结构化失败退出，而不是草率放弃
 
 ---
 
